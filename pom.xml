@@ -32,6 +32,43 @@
       <artifactId>HikariCP</artifactId>
       <version>3.2.0</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>6.0.6</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.16.20</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc todo 写框架参考-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>5.1.1.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.redisson</groupId>
+      <artifactId>redisson</artifactId>
+      <version>3.6.4</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>cn.org.zax</groupId>
+      <artifactId>jzax</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+
   </dependencies>
 
   <build>

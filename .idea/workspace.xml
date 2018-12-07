@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5188b2cc-ac61-4acf-a234-097301b5a565" name="Default Changelist" comment="" />
+    <list default="true" id="5188b2cc-ac61-4acf-a234-097301b5a565" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/manager/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/manager/DataSourceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/mapper/BindMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/pool/DataSourcePool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/support/ResultSetSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/zax/config/AutoConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/zax/factory/ConnectionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,45 +31,50 @@
     <session id="2131402277">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="178" />
-          <entry key="xml" value="5" />
+          <entry key="java" value="10194" />
+          <entry key="xml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="178" />
-          <entry key="XML" value="5" />
+          <entry key="JAVA" value="10194" />
+          <entry key="XML" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="8" />
+          <entry key="class" value="9" />
+          <entry key="java" value="344" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="8" />
+          <entry key="CLASS" value="9" />
+          <entry key="JAVA" value="344" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/config/AutoConfiguration.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+            <state relative-caret-position="491">
+              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,64 +83,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar!/com/zaxxer/hikari/HikariConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/manager/DataSourceManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13005">
-              <caret line="919" column="22" selection-start-line="919" selection-start-column="22" selection-end-line="919" selection-end-column="22" />
+            <state relative-caret-position="238">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar!/com/zaxxer/hikari/hibernate/HikariConfigurationUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/pool/DataSourcePool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar!/com/zaxxer/hikari/hibernate/HikariConnectionProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-526">
-              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar!/com/zaxxer/hikari/util/UtilityElf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4964">
-              <caret line="355" column="20" selection-start-line="355" selection-start-column="20" selection-end-line="355" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar!/com/zaxxer/hikari/util/PropertyElf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="44" column="45" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/factory/ConnectionFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="204">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -130,16 +108,83 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getConnection</find>
+      <find>getConnectionFromDriver</find>
+      <find>config</find>
+      <find>rowMapper</find>
+      <find>mapper</find>
+      <find>bindMapper</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>bindMapper</replace>
+      <replace>mapper</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/CustomerContextHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/AbsDataBaseSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/factory/DataSourceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/CustomerType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/Connection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/ConnectionAccessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/ConnectionFactory.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/Configuration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/AutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/DefaultConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/config/DefaultConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/config/DboOp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/config/DboTeamplte.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/config/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/config/Dbo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/config/DboRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/MysqlDataFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/DataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/config/DBo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/AbsDbo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DataSou.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DataSouourceManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DataSourceExecute.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DataSourceManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DBoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DataSourceExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/support/DbSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/mapper/RowMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/mapper/BindMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DBo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBoRe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepositoty.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DBManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepositoryOp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/support/ResultSetSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/m2/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/m2/BindMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DBRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DbS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/manager/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java" />
       </list>
     </option>
   </component>
@@ -172,41 +217,12 @@
     <entry key="Project Default">
       <profile-state>
         <expanded-state>
-          <State>
-            <id />
-          </State>
+          <State />
           <State>
             <id>Abstraction issuesJava</id>
           </State>
           <State>
             <id>Android</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Accessibility</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Correctness</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Correctness &gt; Messages</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Internationalization</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Performance</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Security</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Usability</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
-          </State>
-          <State>
-            <id>Android Lint for Kotlin</id>
           </State>
           <State>
             <id>Assignment issuesGroovy</id>
@@ -230,9 +246,6 @@
             <id>Class structureJava</id>
           </State>
           <State>
-            <id>Code maturity issuesJava</id>
-          </State>
-          <State>
             <id>Code quality toolsJavaScript</id>
           </State>
           <State>
@@ -243,9 +256,6 @@
           </State>
           <State>
             <id>CoffeeScript</id>
-          </State>
-          <State>
-            <id>Control FlowGroovy</id>
           </State>
           <State>
             <id>Control flow issuesJava</id>
@@ -266,12 +276,6 @@
             <id>Error handlingJavaScript</id>
           </State>
           <State>
-            <id>FreeMarker inspections</id>
-          </State>
-          <State>
-            <id>GPath inspectionsGroovy</id>
-          </State>
-          <State>
             <id>General</id>
           </State>
           <State>
@@ -290,22 +294,10 @@
             <id>Groovy</id>
           </State>
           <State>
-            <id>Guice Inspections</id>
-          </State>
-          <State>
             <id>HTML</id>
           </State>
           <State>
-            <id>Initialization issuesJava</id>
-          </State>
-          <State>
-            <id>Internationalization issuesJava</id>
-          </State>
-          <State>
             <id>J2ME issuesJava</id>
-          </State>
-          <State>
-            <id>JUnit issuesJava</id>
           </State>
           <State>
             <id>Java</id>
@@ -326,22 +318,10 @@
             <id>JavaScript</id>
           </State>
           <State>
-            <id>Javadoc issuesJava</id>
-          </State>
-          <State>
             <id>Kotlin</id>
           </State>
           <State>
-            <id>Logging issuesJava</id>
-          </State>
-          <State>
             <id>Maven</id>
-          </State>
-          <State>
-            <id>Memory issuesJava</id>
-          </State>
-          <State>
-            <id>Naming ConventionsGroovy</id>
           </State>
           <State>
             <id>Naming conventionsJava</id>
@@ -356,16 +336,13 @@
             <id>OSGi</id>
           </State>
           <State>
-            <id>Performance issuesJava</id>
-          </State>
-          <State>
-            <id>Portability issuesJava</id>
-          </State>
-          <State>
             <id>Potentially confusing code constructsGroovy</id>
           </State>
           <State>
             <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugs</id>
           </State>
           <State>
             <id>Probable bugsCSS</id>
@@ -395,9 +372,6 @@
             <id>SQL</id>
           </State>
           <State>
-            <id>Security issuesJava</id>
-          </State>
-          <State>
             <id>Spring</id>
           </State>
           <State>
@@ -422,18 +396,6 @@
             <id>Threading issuesJava</id>
           </State>
           <State>
-            <id>UI Form Problems</id>
-          </State>
-          <State>
-            <id>Velocity inspections</id>
-          </State>
-          <State>
-            <id>Visibility issuesJava</id>
-          </State>
-          <State>
-            <id>WebSocket issues</id>
-          </State>
-          <State>
             <id>XPath</id>
           </State>
           <State>
@@ -442,18 +404,21 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>Android</id>
+            <id>Lombok</id>
           </State>
         </selected-state>
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -466,24 +431,74 @@
               <item name="dbo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dbo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dbo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dbo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="dbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.redisson:redisson:3.6.4" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="dbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.redisson:redisson:3.6.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="redisson-3.6.4.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540558271772" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544188996772" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cn.org.zax" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.org.zax.m2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/cn/org/zax/m2" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -497,15 +512,94 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AppTest.test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Config" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.org.zax.datasource.config.Config" />
+      <module name="dbo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.org.zax.datasource.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.org.zax.config.DBo" />
+      <module name="dbo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.org.zax.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dbo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.org.zax.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.org.zax" />
+      <option name="MAIN_CLASS_NAME" value="cn.org.zax.AppTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dbo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.org.zax.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.org.zax" />
+      <option name="MAIN_CLASS_NAME" value="cn.org.zax.AppTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dbo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.org.zax.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.org.zax" />
+      <option name="MAIN_CLASS_NAME" value="cn.org.zax.AppTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -533,6 +627,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.AppTest.test" />
+      <item itemvalue="Application.Config" />
+      <item itemvalue="Application.DBo" />
+      <item itemvalue="JUnit.AppTest.test2" />
+      <item itemvalue="JUnit.AppTest.test3" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AppTest.test" />
+        <item itemvalue="JUnit.AppTest.test3" />
+        <item itemvalue="JUnit.AppTest.test2" />
+        <item itemvalue="Application.DBo" />
+        <item itemvalue="Application.Config" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
@@ -546,16 +656,65 @@
       <updated>1540555144768</updated>
       <workItem from="1540555148964" duration="3101000" />
       <workItem from="1540558464305" duration="432000" />
+      <workItem from="1540560214404" duration="171000" />
+      <workItem from="1540782159762" duration="14744000" />
+      <workItem from="1540888779194" duration="26541000" />
+      <workItem from="1540997441394" duration="42280000" />
+      <workItem from="1544065157173" duration="11883000" />
+      <workItem from="1544150677392" duration="1223000" />
+      <workItem from="1544159582432" duration="22093000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="AppTest_test - 2018.12.07 at 20h 03m 23s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.07 at 20h 04m 17s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.07 at 20h 04m 57s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.07 at 20h 13m 58s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.07 at 20h 16m 19s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.07 at 20h 20m 47s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.07 at 20h 32m 27s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.07 at 20h 32m 56s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.07 at 20h 51m 14s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.07 at 21h 11m 45s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3533000" />
+    <option name="totallyTimeSpent" value="122468000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-197" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2526596" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -564,19 +723,20 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937685" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36003956" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.537092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937685" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32937685" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32937685" />
-      <window_info anchor="bottom" id="Problems" order="10" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Problems" order="10" weight="0.32937685" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32937685" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32937685" />
+      <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -594,78 +754,417 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/Redisson.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/connection/MasterSlaveConnectionManager.java</url>
+          <line>287</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>connectionManager.getCommandExecutor()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/connection/CRC16.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        <state relative-caret-position="-84">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0.jar!/com/zaxxer/hikari/HikariConfig.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/connection/DnsAddressResolverGroupFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="187">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/client/RedisConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/connection/pool/MasterConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
           <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/config/AutoConfiguration.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/misc/RPromise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/connection/ClientConnectionsEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="127" column="35" selection-start-line="127" selection-start-column="31" selection-end-line="127" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/connection/pool/ConnectionPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/pubsub/AsyncSemaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/command/CommandAsyncService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/config/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="369" column="20" lean-forward="true" selection-start-line="369" selection-start-column="20" selection-end-line="369" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/api/RedissonClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/config/SentinelServersConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/config/BaseMasterSlaveServersConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/config/BaseConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="147" column="13" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/config/MasterSlaveServersConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/connection/SingleConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/cluster/ClusterConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="73" column="37" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/command/CommandSyncExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/command/CommandExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/command/CommandSyncService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/connection/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/eviction/EvictionScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/config/ConfigSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="225" column="36" selection-start-line="225" selection-start-column="36" selection-end-line="225" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/connection/MasterSlaveConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="983">
+          <caret line="286" column="30" selection-start-line="286" selection-start-column="30" selection-end-line="286" selection-end-column="30" />
+          <folding>
+            <element signature="e#10224#10225#0" expanded="true" />
+            <element signature="e#10262#10263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/repository.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/RedissonObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar!/com/zaxxer/hikari/HikariDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="99" column="28" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/RedissonExpirable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+          <folding>
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepositoryOp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+          <folding>
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/mapper/BindMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar!/com/zaxxer/hikari/HikariConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13005">
-          <caret line="919" column="22" selection-start-line="919" selection-start-column="22" selection-end-line="919" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar!/com/zaxxer/hikari/hibernate/HikariConfigurationUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar!/com/zaxxer/hikari/util/UtilityElf.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/RedissonList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/RedissonHyperLogLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4964">
-          <caret line="355" column="20" selection-start-line="355" selection-start-column="20" selection-end-line="355" selection-end-column="20" />
+        <state relative-caret-position="221">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding>
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar!/com/zaxxer/hikari/util/PropertyElf.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/Redisson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="44" column="45" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="45" />
+        <state relative-caret-position="204">
+          <caret line="93" column="47" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/factory/ConnectionFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DataSourceManager.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/m2/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DataSourcePool.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/m2/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar!/com/zaxxer/hikari/hibernate/HikariConnectionProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/m2/BindMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DBRepository.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-526">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        <state relative-caret-position="578">
+          <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DbS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1282#1283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/support/ResultSetSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="35" column="73" lean-forward="true" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/manager/DataSourceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/manager/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/pool/DataSourcePool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
