@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5188b2cc-ac61-4acf-a234-097301b5a565" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/org/zax/support/DBSupport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/org/zax/support/DBSupport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cn/org/zax/AppTest$UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cn/org/zax/AppTest$UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cn/org/zax/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cn/org/zax/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,27 +32,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10561" />
+          <entry key="java" value="10800" />
           <entry key="xml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10561" />
+          <entry key="JAVA" value="10800" />
           <entry key="XML" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="9" />
-          <entry key="java" value="354" />
+          <entry key="java" value="357" />
           <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="9" />
-          <entry key="JAVA" value="354" />
+          <entry key="JAVA" value="357" />
           <entry key="XML" value="8" />
         </counts>
       </usages-collector>
@@ -59,11 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            <state relative-caret-position="397">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,19 +73,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/config/Config.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="425">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+            <state relative-caret-position="1616">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#913#914#0" expanded="true" />
@@ -95,22 +99,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/manager/DataSourceManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="103">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#580#581#0" expanded="true" />
@@ -124,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/support/ResultSetSupport.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/DataSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/datasource/config/DBo.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/AbsDbo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DataSou.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DataSouourceManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DataSourceExecute.java" />
@@ -209,11 +200,12 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DbS.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/DB.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/manager/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/config/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java" />
       </list>
     </option>
   </component>
@@ -499,7 +491,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544414847976" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544426659556" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -682,32 +674,11 @@
       <workItem from="1544065157173" duration="11883000" />
       <workItem from="1544150677392" duration="1223000" />
       <workItem from="1544159582432" duration="22941000" />
-      <workItem from="1544407686595" duration="5432000" />
+      <workItem from="1544407686595" duration="9899000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_test - 2018.12.07 at 20h 16m 19s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_test - 2018.12.07 at 20h 20m 47s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_test - 2018.12.07 at 20h 32m 27s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_test - 2018.12.07 at 20h 32m 56s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_test - 2018.12.07 at 20h 51m 14s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_test - 2018.12.07 at 21h 11m 45s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_test - 2018.12.07 at 21h 21m 32s.xml">
-      <configuration name="AppTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest_test - 2018.12.07 at 21h 22m 39s.xml">
       <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
@@ -717,9 +688,30 @@
     <history-entry file="AppTest_test - 2018.12.10 at 10h 32m 14s.xml">
       <configuration name="AppTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest_test - 2018.12.10 at 15h 02m 22s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.10 at 15h 04m 04s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.10 at 15h 04m 41s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.10 at 15h 10m 25s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.10 at 15h 11m 02s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.10 at 15h 13m 03s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test - 2018.12.10 at 15h 13m 32s.xml">
+      <configuration name="AppTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128748000" />
+    <option name="totallyTimeSpent" value="133215000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -734,7 +726,7 @@
     <frame x="1280" y="-197" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17659575" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17659575" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -814,13 +806,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/client/RedisConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/connection/pool/MasterConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1055,43 +1040,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/support/ResultSetSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1105,27 +1058,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/config/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/config/Config.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/manager/ConnectionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="476">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/manager/ConnectionManager.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/sql/Statement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="196">
+          <caret line="650" column="8" selection-start-line="650" selection-start-column="8" selection-end-line="650" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/support/ResultSetSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1134,12 +1109,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+        <state relative-caret-position="1616">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#913#914#0" expanded="true" />
             <element signature="e#952#953#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -43,6 +43,22 @@ public class DBSupport extends ResultSetSupport{
         return (T) mapper.mapper(rs);
     }
 
+    public <T> T returnPrimaryKey(ResultSet rs,Class clazz) throws SQLException {
+        if (Objects.nonNull(rs)){
+            rs.next();
+            if (clazz.isAssignableFrom(Long.class)) {
+                return (T) new Long(rs.getLong(1));
+            }
+            if (clazz.isAssignableFrom(String.class)) {
+                return (T) rs.getString(1);
+            }
+            if (clazz.isAssignableFrom(Integer.class)) {
+                return (T) new Integer(rs.getInt(1));
+            }
+        }
+        return null;
+    }
+
     //组装参数
     public void buildSqlParams(PreparedStatement ps) throws SQLException {
         if (paramsList.size() > 0){

@@ -81,16 +81,16 @@ public class DB<T,ID> implements DBRepository {
 
 
     @Override
-    public int insert(DBSupport support) {
+    public int insert(DBSupport support,Class clazz) {
         try {
-            PreparedStatement statement = connection.prepareStatement(support.sql);
+            PreparedStatement statement = connection.prepareStatement(support.sql,PreparedStatement.RETURN_GENERATED_KEYS);
             support.buildSqlParams(statement);
             int result =  statement.executeUpdate();
             if (result > 0){
-                //statement.getGeneratedKeys();
+                ResultSet rs = statement.getGeneratedKeys();
                 //设置id返回
+                return support.returnPrimaryKey(rs,clazz);
             }
-            return result;
         } catch (SQLException e) {
             e.printStackTrace();
         }

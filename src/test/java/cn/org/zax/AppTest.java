@@ -35,6 +35,7 @@ public class AppTest{
     }
 
     UserMapper userMapper = new UserMapper();
+
     String dbName = "testboot";
     Config config = new Config().setUrl("jdbc:mysql://127.0.0.1:3306/").setUsername("root").setPassword("root");
     DBRepository db = DB.create(config);
@@ -42,7 +43,7 @@ public class AppTest{
     @Test
     public void test() throws SQLException {
         String sql = "insert into %User(id,username,name,age,balance,password,uuid) values (?,?,?,?,?,?,?)";
-        int insert = db.insert(new DBSupport(sql,dbName).addParams(10, "呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"));
+        int insert = db.insert(new DBSupport(sql,dbName).addParams(11, "呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"),Integer.class);
         System.out.println("插入 "+insert);
 
         String sql2 = "select * from %User";

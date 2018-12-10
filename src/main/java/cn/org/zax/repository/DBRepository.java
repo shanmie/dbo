@@ -19,7 +19,7 @@ public interface DBRepository<T,ID> {
 
     T select(DBSupport support, BindMapper bindMapper) throws SQLException;
 
-    int insert(DBSupport support);
+    int insert(DBSupport support,Class clazz);
 
     int update(DBSupport support);
 
