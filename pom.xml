@@ -55,12 +55,6 @@
       <version>5.1.1.RELEASE</version>
     </dependency>
 
-    <dependency>
-      <groupId>org.redisson</groupId>
-      <artifactId>redisson</artifactId>
-      <version>3.6.4</version>
-    </dependency>
-
 
     <dependency>
       <groupId>cn.org.zax</groupId>

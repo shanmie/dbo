@@ -1,5 +1,6 @@
 package cn.org.zax.repository;
 
+import cn.org.zax.mapper.BindMapper;
 import cn.org.zax.support.DBSupport;
 
 import java.sql.SQLException;
@@ -14,11 +15,12 @@ import java.util.List;
  * @Version: 1.0
  */
 public interface DBRepository<T,ID> {
-    List<T> selectAll(DBSupport support);
+    List<T> selectAll(DBSupport support, BindMapper bindMapper);
 
-    T select(DBSupport support) throws SQLException;
+    T select(DBSupport support, BindMapper bindMapper) throws SQLException;
 
     int insert(DBSupport support);
 
     int update(DBSupport support);
+
 }

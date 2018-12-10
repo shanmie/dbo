@@ -8,8 +8,6 @@ import cn.org.zax.repository.DBRepository;
 import cn.org.zax.support.DBSupport;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
-import org.redisson.Redisson;
-import org.redisson.api.RedissonClient;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -40,18 +38,19 @@ public class AppTest{
     String dbName = "testboot";
     Config config = new Config().setUrl("jdbc:mysql://127.0.0.1:3306/").setUsername("root").setPassword("root");
     DBRepository db = DB.create(config);
+
     @Test
     public void test() throws SQLException {
         String sql = "insert into %User(id,username,name,age,balance,password,uuid) values (?,?,?,?,?,?,?)";
-        int insert = db.insert(new DBSupport(sql, dbName).addParams(10, "呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"));
+        int insert = db.insert(new DBSupport(sql,dbName).addParams(10, "呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"));
         System.out.println("插入 "+insert);
 
         String sql2 = "select * from %User";
-        List<User> all = db.selectAll(new DBSupport(sql2, dbName).bindMapper(userMapper));
+        List<User> all = db.selectAll(new DBSupport(sql2,dbName).addParams(),userMapper);
         System.out.println("查全部"+all);
 
         String sql3 = "select * from %User where id =?";
-        User one = (User) db.select(new DBSupport(sql3, dbName).bindMapper(userMapper).addParams(4));
+        User one = (User) db.select(new DBSupport(sql3, dbName).addParams(4),userMapper);
         System.out.println("查一个"+one);
 
 
@@ -63,20 +62,6 @@ public class AppTest{
     }
 
 
-    @Test
-    public void test2(){
-        org.redisson.config.Config config = new org.redisson.config.Config();
-        config.useSingleServer()
-                .setClientName("")
-                .setConnectTimeout(30000)
-                .setTimeout(10000)
-                .setRetryAttempts(5)
-                .setRetryInterval(3000)
-                .setAddress("redis://192.168.6.22:6379");
-
-        RedissonClient redissonClient = Redisson.create(config);
-        System.out.println(redissonClient);
-    }
 
     @Test
     public void test3(){

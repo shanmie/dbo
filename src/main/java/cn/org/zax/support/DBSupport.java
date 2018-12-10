@@ -19,7 +19,7 @@ import java.util.Objects;
  */
 public class DBSupport extends ResultSetSupport{
     static public BindMapper mapper;
-    public List<Object> paramsList = new ArrayList<>();
+    static public List<Object> paramsList = new ArrayList<>();
 
     public DBSupport(String sql, String dbName) {
         super(sql, dbName);
@@ -31,7 +31,7 @@ public class DBSupport extends ResultSetSupport{
                 paramsList.add(arg);
             }
         }
-        return this;
+       return this;
     }
 
     public DBSupport bindMapper(BindMapper mapper){

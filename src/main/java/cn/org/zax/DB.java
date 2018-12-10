@@ -3,6 +3,7 @@ package cn.org.zax;
 import cn.org.zax.config.Config;
 import cn.org.zax.manager.ConnectionManager;
 import cn.org.zax.manager.DataSourceManager;
+import cn.org.zax.mapper.BindMapper;
 import cn.org.zax.pool.DataSourcePool;
 import cn.org.zax.repository.DBRepository;
 import cn.org.zax.support.DBSupport;
@@ -48,10 +49,11 @@ public class DB<T,ID> implements DBRepository {
 
 
     @Override
-    public List selectAll(DBSupport support) {
+    public List selectAll(DBSupport support, BindMapper bindMapper) {
         try {
             PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
+            support.bindMapper(bindMapper);
             ResultSet resultSet = statement.executeQuery();
             List<T> list = support.buildResultSetList(resultSet);
             return list;
@@ -62,10 +64,11 @@ public class DB<T,ID> implements DBRepository {
     }
 
     @Override
-    public T select(DBSupport support)  {
+    public T select(DBSupport support ,BindMapper bindMapper)  {
         try {
             PreparedStatement statement  = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
+            support.bindMapper(bindMapper);
             ResultSet resultSet = statement.executeQuery();
             T t = (T) support.buildResultSetBean(resultSet);
             return t;
