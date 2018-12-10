@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5188b2cc-ac61-4acf-a234-097301b5a565" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/org/zax/DB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/org/zax/DB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/org/zax/repository/DBRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/org/zax/repository/DBRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/org/zax/support/DBSupport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/org/zax/support/DBSupport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cn/org/zax/AppTest$UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cn/org/zax/AppTest$UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/cn/org/zax/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cn/org/zax/AppTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,27 +31,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10550" />
+          <entry key="java" value="10561" />
           <entry key="xml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10550" />
+          <entry key="JAVA" value="10561" />
           <entry key="XML" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="9" />
-          <entry key="java" value="350" />
+          <entry key="java" value="354" />
           <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="9" />
-          <entry key="JAVA" value="350" />
+          <entry key="JAVA" value="354" />
           <entry key="XML" value="8" />
         </counts>
       </usages-collector>
@@ -67,46 +62,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="382">
+              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/config/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="55" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="405">
+              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/manager/DataSourceManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="834">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            <state>
+              <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#913#914#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -217,9 +211,9 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/manager/ConnectionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/support/DBSupport.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java" />
       </list>
     </option>
   </component>
@@ -487,7 +481,12 @@
             </path>
             <path>
               <item name="dbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="dbo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zax" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -500,7 +499,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544409657039" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544414847976" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -683,7 +682,7 @@
       <workItem from="1544065157173" duration="11883000" />
       <workItem from="1544150677392" duration="1223000" />
       <workItem from="1544159582432" duration="22941000" />
-      <workItem from="1544407686595" duration="3701000" />
+      <workItem from="1544407686595" duration="5432000" />
     </task>
     <servers />
   </component>
@@ -720,7 +719,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127017000" />
+    <option name="totallyTimeSpent" value="128748000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -763,7 +762,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.23776595" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.23776595" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -792,7 +791,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java</url>
-          <line>26</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
@@ -815,13 +814,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/connection/DnsAddressResolverGroupFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.6.4/redisson-3.6.4-sources.jar!/org/redisson/client/RedisConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-234">
@@ -1056,26 +1048,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DBRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DB.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/m2/DbS.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/manager/DataSourceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/manager/ConnectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/pool/DataSourcePool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1105,6 +1077,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/manager/DataSourceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/repository/DBRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1115,33 +1115,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/config/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/manager/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/org/zax/DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="405">
+          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#913#914#0" expanded="true" />
             <element signature="e#952#953#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cn/org/zax/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="55" selection-end-column="17" />
         </state>
       </provider>
     </entry>

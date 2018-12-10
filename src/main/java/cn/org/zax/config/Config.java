@@ -1,6 +1,7 @@
 package cn.org.zax.config;
 
 import lombok.Getter;
+import lombok.Setter;
 
 /**
  * @Package: cn.org.zax.datasource
@@ -10,6 +11,7 @@ import lombok.Getter;
  * @CreateDate: 2018/10/30 下午11:32
  * @Version: 1.0
  */
+@Setter
 @Getter
 public class Config  {
 
