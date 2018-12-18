@@ -6,7 +6,6 @@ import cn.org.zax.config.Config;
 import cn.org.zax.mapper.BindMapper;
 import cn.org.zax.repository.DBRepository;
 import cn.org.zax.support.DBSupport;
-import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.sql.ResultSet;
