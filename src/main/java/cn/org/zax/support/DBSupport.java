@@ -19,13 +19,14 @@ import java.util.Objects;
  */
 public class DBSupport extends ResultSetSupport{
     static public BindMapper mapper;
-    static public List<Object> paramsList = new ArrayList<>();
+    static public List<Object> paramsList;
 
     public DBSupport(String sql, String dbName) {
         super(sql, dbName);
     }
 
     public DBSupport addParams(Object... args){
+        this.paramsList = new ArrayList<>();
         if (Objects.nonNull(args)){
             for (Object arg : args) {
                 paramsList.add(arg);

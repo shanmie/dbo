@@ -41,20 +41,20 @@ public class AppTest{
 
     @Test
     public void test() throws SQLException {
-        String sql = "insert into %User(id,username,name,age,balance,password,uuid) values (?,?,?,?,?,?,?)";
-        int insert = db.insert(new DBSupport(sql,dbName).addParams(12, "呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"),Integer.class);
+        String sql = "insert into %Users(username,name,age,balance,password,uuid) values (?,?,?,?,?,?)";
+        int insert = db.insert(new DBSupport(sql,dbName).addParams("呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"),Integer.class);
         System.out.println("插入 "+insert);
 
-        String sql2 = "select * from %User";
+        String sql2 = "select * from %Users";
         List<User> all = db.selectAll(new DBSupport(sql2,dbName).addParams(),userMapper);
         System.out.println("查全部"+all);
 
-        String sql3 = "select * from %User where id =?";
+        String sql3 = "select * from %Users where id =?";
         User one = (User) db.select(new DBSupport(sql3, dbName).addParams(4),userMapper);
         System.out.println("查一个"+one);
 
 
-        String sql4 = "update %User set password=? where id =?";
+        String sql4 = "update %Users set password=? where id =?";
         int update = db.update(new DBSupport(sql4, dbName).addParams("213",4));
         System.out.println("更新"+update);
 

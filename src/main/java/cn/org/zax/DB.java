@@ -8,6 +8,7 @@ import cn.org.zax.pool.DataSourcePool;
 import cn.org.zax.repository.DBRepository;
 import cn.org.zax.support.DBSupport;
 import com.zaxxer.hikari.HikariDataSource;
+import lombok.extern.slf4j.Slf4j;
 
 import java.sql.*;
 import java.util.List;
@@ -20,6 +21,7 @@ import java.util.List;
  * @CreateDate: 2018/11/1 下午7:44
  * @Version: 1.0
  */
+@Slf4j
 public class DB<T,ID> implements DBRepository {
 
     Connection connection;
@@ -58,7 +60,7 @@ public class DB<T,ID> implements DBRepository {
             List<T> list = support.buildResultSetList(resultSet);
             return list;
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.error("select all fail to message {}",e);
         }
         return null;
     }
@@ -73,7 +75,7 @@ public class DB<T,ID> implements DBRepository {
             T t = (T) support.buildResultSetBean(resultSet);
             return t;
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.error("select one fail to message {}",e);
         }
         return null;
     }
@@ -92,7 +94,7 @@ public class DB<T,ID> implements DBRepository {
                 return support.returnPrimaryKey(rs,clazz);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.error("insert record fail to message {}",e);
         }
         return 0;
     }
@@ -104,7 +106,7 @@ public class DB<T,ID> implements DBRepository {
             support.buildSqlParams(statement);
             return statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.error("update record fail to message {}",e);
         }
         return 0;
     }
