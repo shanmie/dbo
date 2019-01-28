@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -42,8 +43,16 @@ public class AppTest{
     @Test
     public void test() throws SQLException {
         String sql = "insert into %Users(username,name,age,balance,password,uuid) values (?,?,?,?,?,?)";
+        List list = new ArrayList();
+        list.add("呀嘿嘿嘿");
+        list.add("hello");
+        list.add(12);
+        list.add(21);
+        list.add("12144231");
+        list.add("derf34dd");
         int insert = db.insert(new DBSupport(sql,dbName).addParams("呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"),Integer.class);
-        System.out.println("插入 "+insert);
+        int insert2 = db.insert(new DBSupport(sql,dbName).addParams(list),Integer.class);
+        System.out.println("插入 | "+insert +" and "+insert2);
 
         String sql2 = "select * from %Users";
         List<User> all = db.selectAll(new DBSupport(sql2,dbName).addParams(),userMapper);

@@ -1,10 +1,14 @@
 package cn.org.zax.support;
 
 import cn.org.zax.mapper.BindMapper;
+import com.google.common.collect.Collections2;
+import org.springframework.util.CollectionUtils;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 
@@ -27,7 +31,11 @@ public class DBSupport extends ResultSetSupport{
 
     public DBSupport addParams(Object... args){
         this.paramsList = new ArrayList<>();
-        if (Objects.nonNull(args)){
+        if (args.length > 0){
+            if (args[0] instanceof Collection<?>){
+                paramsList.addAll((Collection<?>) args[0]);
+                return this;
+            }
             for (Object arg : args) {
                 paramsList.add(arg);
             }
