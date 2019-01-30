@@ -8,3 +8,4 @@ cn/org/zax/repository/DBRepository.class
 cn/org/zax/support/DBSupport.class
 cn/org/zax/manager/DataSourceManager.class
 cn/org/zax/DB.class
+cn/org/zax/help/WhereHelp.class
