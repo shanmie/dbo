@@ -1,8 +1,6 @@
 package cn.org.zax.support;
 
 import cn.org.zax.mapper.BindMapper;
-import com.google.common.collect.Collections2;
-import org.springframework.util.CollectionUtils;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

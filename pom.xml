@@ -49,11 +49,11 @@
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc todo 写框架参考-->
-    <dependency>
+    <!--<dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
       <version>5.1.1.RELEASE</version>
-    </dependency>
+    </dependency>-->
 
 
     <dependency>

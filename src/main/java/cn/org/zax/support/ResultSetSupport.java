@@ -1,5 +1,4 @@
 package cn.org.zax.support;
-
 import org.apache.commons.lang3.StringUtils;
 
 import java.sql.ResultSet;
