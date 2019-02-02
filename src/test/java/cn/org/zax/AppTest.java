@@ -43,7 +43,7 @@ public class AppTest{
     @Test
     public void test() throws SQLException {
         String sql = "insert into %Users(username,name,age,balance,password,uuid) values (?,?,?,?,?,?)";
-        /*
+
         List list = new ArrayList();
         list.add("呀嘿嘿嘿");
         list.add("hello");
@@ -51,7 +51,7 @@ public class AppTest{
         list.add(21);
         list.add("12144231");
         list.add("derf34dd");
-        */
+
         //int insert2 = db.insert(new DBSupport(sql,dbName).addParams(list),Integer.class);
 
         int insert = db.insert(new DBSupport(sql,dbName).addParams("呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"),Integer.class);
