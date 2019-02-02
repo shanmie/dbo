@@ -52,7 +52,7 @@ public class AppTest{
         list.add("12144231");
         list.add("derf34dd");
 
-        //int insert2 = db.insert(new DBSupport(sql,dbName).addParams(list),Integer.class);
+        int insert2 = db.insert(new DBSupport(sql,dbName).addParams(list),Integer.class);
 
         int insert = db.insert(new DBSupport(sql,dbName).addParams("呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"),Integer.class);
         //System.out.println("插入 | "+insert +" and "+insert2);
