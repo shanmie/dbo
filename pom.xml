@@ -54,14 +54,6 @@
       <version>5.1.1.RELEASE</version>
     </dependency>-->
 
-
-    <dependency>
-      <groupId>cn.org.zax</groupId>
-      <artifactId>jzax</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
-
-
   </dependencies>
 
   <build>
