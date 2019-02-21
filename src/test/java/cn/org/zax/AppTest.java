@@ -67,7 +67,7 @@ public class AppTest{
 
 
         String sql4 = "update %Users set password=? where id =?";
-        int update = db.update(new DBSupport(sql4, dbName).addParams("213",4));
+        int update = db.update(new DBSupport(sql4, dbName).addParams("11111",6));
         System.out.println("更新"+update);
 
 
