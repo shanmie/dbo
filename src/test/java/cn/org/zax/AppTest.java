@@ -42,7 +42,7 @@ public class AppTest{
 
     @Test
     public void test() throws SQLException {
-        String sql = "insert into %Users(username,name,age,balance,password,uuid) values (?,?,?,?,?,?)";
+       /* String sql = "insert into %Users(username,name,age,balance,password,uuid) values (?,?,?,?,?,?)";
 
         List list = new ArrayList();
         list.add("呀嘿嘿嘿");
@@ -54,7 +54,7 @@ public class AppTest{
 
         int insert2 = db.insert(new DBSupport(sql,dbName).addParams(list),Integer.class);
 
-        int insert = db.insert(new DBSupport(sql,dbName).addParams("呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"),Integer.class);
+        int insert = db.insert(new DBSupport(sql,dbName).addParams("呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"),Integer.class);*/
         //System.out.println("插入 | "+insert +" and "+insert2);
 
         String sql2 = "select * from %Users";
@@ -66,9 +66,9 @@ public class AppTest{
         System.out.println("查一个"+one);
 
 
-        String sql4 = "update %Users set password=? where id =?";
+        /*String sql4 = "update %Users set password=? where id =?";
         int update = db.update(new DBSupport(sql4, dbName).addParams("11111",6));
-        System.out.println("更新"+update);
+        System.out.println("更新"+update);*/
 
 
     }
