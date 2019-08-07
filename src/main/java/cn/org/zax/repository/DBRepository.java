@@ -15,12 +15,17 @@ import java.util.List;
  * @Version: 1.0
  */
 public interface DBRepository<T,ID> {
-    List<T> selectAll(DBSupport support, BindMapper bindMapper);
+    List<T> selectAll(String sql ,String dbName , BindMapper bindMapper);
 
-    T select(DBSupport support, BindMapper bindMapper) throws SQLException;
+    T select(String sql ,String dbName , BindMapper bindMapper) throws SQLException;
 
-    int insert(DBSupport support,Class clazz);
+    T select(String sql ,String dbName , BindMapper bindMapper,Object... obj) throws SQLException;
 
-    int update(DBSupport support);
+    int insert(String sql ,String dbName ,Class clazz ,Object... obj);
+
+    int update(String sql ,String dbName );
+
+
+    int update(String sql ,String dbName , Object ... obj);
 
 }

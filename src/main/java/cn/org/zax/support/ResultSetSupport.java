@@ -14,16 +14,14 @@ import java.util.List;
  * @CreateDate: 2018/12/7 下午5:49
  * @Version: 1.0
  */
-public class ResultSetSupport<T>{
+public class ResultSetSupport{
     public String sql;
     public String dbName;
 
-    public List<T> resultSetList = new ArrayList<>();
 
     public ResultSetSupport(String sql, String dbName) {
         this.sql = buildDBNameSql(sql,dbName);
         this.dbName = dbName;
-
     }
 
     static public String buildDBNameSql(String sql,String dbName){
@@ -32,14 +30,15 @@ public class ResultSetSupport<T>{
         return beforeLast + dbName + "." + afterLast;
     }
 
-    public List<T> buildResultSetList(ResultSet rs) throws SQLException {
+    public <T> List<T> buildResultSetList(ResultSet rs) throws SQLException {
+        List<T> resultSetList = new ArrayList<>();
         while (rs.next()){
             resultSetList.add(DBSupport.parseMapper(rs));
         }
         return resultSetList;
     }
 
-    public T buildResultSetBean(ResultSet rs) throws SQLException {
+    public <T> T buildResultSetBean(ResultSet rs) throws SQLException {
         rs.next();
         return DBSupport.parseMapper(rs);
     }

@@ -51,14 +51,14 @@ public class DB<T,ID> implements DBRepository {
 
 
     @Override
-    public List selectAll(DBSupport support, BindMapper bindMapper) {
+    public List<T> selectAll(String sql ,String dbName , BindMapper bindMapper) {
         try {
+            DBSupport support = new DBSupport(sql, dbName);
             PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
             support.bindMapper(bindMapper);
             ResultSet resultSet = statement.executeQuery();
-            List<T> list = support.buildResultSetList(resultSet);
-            return list;
+            return support.buildResultSetList(resultSet);
         } catch (SQLException e) {
             log.error("select all fail to message {}",e);
         }
@@ -66,25 +66,30 @@ public class DB<T,ID> implements DBRepository {
     }
 
     @Override
-    public T select(DBSupport support ,BindMapper bindMapper)  {
+    public T select(String sql ,String dbName  ,BindMapper bindMapper)  {
         try {
+            DBSupport support = new DBSupport(sql, dbName);
             PreparedStatement statement  = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
             support.bindMapper(bindMapper);
             ResultSet resultSet = statement.executeQuery();
-            T t = (T) support.buildResultSetBean(resultSet);
-            return t;
+            return support.buildResultSetBean(resultSet);
         } catch (SQLException e) {
             log.error("select one fail to message {}",e);
         }
         return null;
     }
 
+    @Override
+    public Object select(String sql, String dbName, BindMapper bindMapper, Object... obj) throws SQLException {
+        return null;
+    }
 
 
     @Override
-    public int insert(DBSupport support,Class clazz) {
+    public int insert(String sql ,String dbName ,Class clazz , Object... obj) {
         try {
+            DBSupport support = new DBSupport(sql, dbName);
             PreparedStatement statement = connection.prepareStatement(support.sql,PreparedStatement.RETURN_GENERATED_KEYS);
             support.buildSqlParams(statement);
             int result =  statement.executeUpdate();
@@ -100,14 +105,20 @@ public class DB<T,ID> implements DBRepository {
     }
 
     @Override
-    public int update(DBSupport support) {
+    public int update(String sql ,String dbName ) {
         try {
+            DBSupport support = new DBSupport(sql, dbName);
             PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
             return statement.executeUpdate();
         } catch (SQLException e) {
             log.error("update record fail to message {}",e);
         }
+        return 0;
+    }
+
+    @Override
+    public int update(String sql, String dbName, Object... obj) {
         return 0;
     }
 

@@ -20,8 +20,8 @@ import java.util.Objects;
  * @Version: 1.0
  */
 public class DBSupport extends ResultSetSupport{
-    static public BindMapper mapper;
-    public List<Object> paramsList = new ArrayList<>();
+    private static BindMapper mapper;
+    private List<Object> paramsList = new ArrayList<>();
 
     public DBSupport(String sql, String dbName) {
         super(sql, dbName);
