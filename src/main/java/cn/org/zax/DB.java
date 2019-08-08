@@ -23,11 +23,11 @@ import java.util.List;
  * @Version: 1.0
  */
 @Slf4j
-public class DB<T,ID> implements DBRepository {
+public class DB<T, ID> implements DBRepository {
 
     Connection connection;
 
-    public DB(Config config){
+    public DB(Config config) {
         //创建数据源
         HikariDataSource dataSource = DataSourceManager.createDataSource(config);
         //获取连接
@@ -37,22 +37,22 @@ public class DB<T,ID> implements DBRepository {
 
     }
 
-    static public DBRepository create(Config config){
+    static public DBRepository create(Config config) {
         return register(config);
     }
 
-    static public DBRepository create(String url, String username, String password ){
+    static public DBRepository create(String url, String username, String password) {
         return register(new Config().setUrl(url).setUsername(username).setPassword(password));
     }
 
-    static private DBRepository register(Config config){
+    static private DBRepository register(Config config) {
         DB db = new DB(config);
         return db;
     }
 
 
     @Override
-    public List<T> selectAll(String sql ,String dbName , BindMapper bindMapper) {
+    public List<T> selectAll(String sql, String dbName, BindMapper bindMapper) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
             PreparedStatement statement = connection.prepareStatement(support.sql);
@@ -61,22 +61,22 @@ public class DB<T,ID> implements DBRepository {
             ResultSet resultSet = statement.executeQuery();
             return support.buildResultSetList(resultSet);
         } catch (SQLException e) {
-            log.error("select all fail to message {}",e);
+            log.error("select all fail to message {}", e);
         }
         return null;
     }
 
     @Override
-    public T select(String sql ,String dbName  ,BindMapper bindMapper)  {
+    public T select(String sql, String dbName, BindMapper bindMapper) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
-            PreparedStatement statement  = connection.prepareStatement(support.sql);
+            PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
             support.bindMapper(bindMapper);
             ResultSet resultSet = statement.executeQuery();
             return support.buildResultSetBean(resultSet);
         } catch (SQLException e) {
-            log.error("select one fail to message {}",e);
+            log.error("select one fail to message {}", e);
         }
         return null;
     }
@@ -84,47 +84,47 @@ public class DB<T,ID> implements DBRepository {
     @Override
     public T select(String sql, String dbName, BindMapper bindMapper, Object... obj) {
         try {
-            DBSupport support = new DBSupport(sql,dbName);
+            DBSupport support = new DBSupport(sql, dbName);
             support.addParams(obj);
-            PreparedStatement statement  = connection.prepareStatement(support.sql);
+            PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
             support.bindMapper(bindMapper);
             ResultSet resultSet = statement.executeQuery();
             return support.buildResultSetBean(resultSet);
-        }catch (Exception e){
-            log.error("select one fail to message {}",e);
+        } catch (Exception e) {
+            log.error("select one fail to message {}", e);
         }
         return null;
     }
 
     @Override
-    public int insert(String sql ,String dbName ,Class clazz , Object... obj) {
+    public int insert(String sql, String dbName, Class clazz, Object... obj) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
             support.addParams(obj);
-            PreparedStatement statement = connection.prepareStatement(support.sql,PreparedStatement.RETURN_GENERATED_KEYS);
+            PreparedStatement statement = connection.prepareStatement(support.sql, PreparedStatement.RETURN_GENERATED_KEYS);
             support.buildSqlParams(statement);
-            int result =  statement.executeUpdate();
-            if (result > 0){
+            int result = statement.executeUpdate();
+            if (result > 0) {
                 ResultSet rs = statement.getGeneratedKeys();
                 //设置id返回
-                return support.returnPrimaryKey(rs,clazz);
+                return support.returnPrimaryKey(rs, clazz);
             }
         } catch (SQLException e) {
-            log.error("insert record fail to message {}",e);
+            log.error("insert record fail to message {}", e);
         }
         return 0;
     }
 
     @Override
-    public int update(String sql ,String dbName) {
+    public int update(String sql, String dbName) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
             PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
             return statement.executeUpdate();
         } catch (SQLException e) {
-            log.error("update record fail to message {}",e);
+            log.error("update record fail to message {}", e);
         }
         return 0;
     }
@@ -138,7 +138,7 @@ public class DB<T,ID> implements DBRepository {
             support.buildSqlParams(statement);
             return statement.executeUpdate();
         } catch (SQLException e) {
-            log.error("update record fail to message {}",e);
+            log.error("update record fail to message {}", e);
         }
         return 0;
     }
