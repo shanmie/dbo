@@ -82,7 +82,7 @@ public class DB<T,ID> implements DBRepository {
     }
 
     @Override
-    public Object select(String sql, String dbName, BindMapper bindMapper, Object... obj) {
+    public T select(String sql, String dbName, BindMapper bindMapper, Object... obj) {
         try {
             DBSupport support = new DBSupport(sql,dbName);
             support.addParams(obj);
@@ -98,7 +98,7 @@ public class DB<T,ID> implements DBRepository {
     }
 
     @Override
-    public Object select(String sql, String dbName, BindMapper bindMapper, List obj) {
+    public T select(String sql, String dbName, BindMapper bindMapper, List obj) {
         return select(sql,dbName,bindMapper,obj.toArray());
     }
 
