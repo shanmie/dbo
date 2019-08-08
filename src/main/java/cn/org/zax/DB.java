@@ -97,12 +97,6 @@ public class DB<T,ID> implements DBRepository {
         return null;
     }
 
-    /*@Override
-    public T select(String sql, String dbName, BindMapper bindMapper, List obj) {
-        return select(sql,dbName,bindMapper,obj.toArray());
-    }*/
-
-
     @Override
     public int insert(String sql ,String dbName ,Class clazz , Object... obj) {
         try {
