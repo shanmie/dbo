@@ -27,6 +27,11 @@ public class DBSupport extends ResultSetSupport{
         super(sql, dbName);
     }
 
+    public DBSupport addParams(List<Object> paramsList){
+        this.paramsList = paramsList;
+        return this;
+    }
+
     public DBSupport addParams(Object... args){
         this.paramsList = new ArrayList<>();
         if (args.length > 0){

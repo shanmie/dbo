@@ -57,11 +57,11 @@ public class AppTest{
         int insert = db.insert(new DBSupport(sql,dbName).addParams("呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"),Integer.class);*/
         //System.out.println("插入 | "+insert +" and "+insert2);
 
-        String sql2 = "select * from %Users";
+        String sql2 = "select * from :Users";
         List all = db.selectAll(sql2,dbName,userMapper);
         System.out.println("查全部"+all);
 
-        String sql3 = "select * from %Users where id =?";
+        String sql3 = "select * from :Users where id =?";
         User one = (User) db.select(sql3,dbName,userMapper,4);
         System.out.println("查一个"+one);
 

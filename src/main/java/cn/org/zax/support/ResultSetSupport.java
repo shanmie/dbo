@@ -25,8 +25,8 @@ public class ResultSetSupport{
     }
 
     static public String buildDBNameSql(String sql,String dbName){
-        String beforeLast = StringUtils.substringBeforeLast(sql,"%");
-        String afterLast = StringUtils.substringAfterLast(sql,"%");
+        String beforeLast = StringUtils.substringBeforeLast(sql,":");
+        String afterLast = StringUtils.substringAfterLast(sql,":");
         return beforeLast + dbName + "." + afterLast;
     }
 

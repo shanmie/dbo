@@ -17,15 +17,20 @@ import java.util.List;
 public interface DBRepository<T,ID> {
     List<T> selectAll(String sql ,String dbName , BindMapper bindMapper);
 
-    T select(String sql ,String dbName , BindMapper bindMapper) throws SQLException;
+    T select(String sql ,String dbName , BindMapper bindMapper);
 
-    T select(String sql ,String dbName , BindMapper bindMapper,Object... obj) throws SQLException;
+    T select(String sql ,String dbName , BindMapper bindMapper,Object... obj);
+
+    T select(String sql ,String dbName , BindMapper bindMapper,List<Object> obj);
 
     int insert(String sql ,String dbName ,Class clazz ,Object... obj);
 
-    int update(String sql ,String dbName );
+    int insert(String sql ,String dbName ,Class clazz ,List<Object> obj);
 
+    int update(String sql ,String dbName);
 
     int update(String sql ,String dbName , Object ... obj);
+
+    int update(String sql ,String dbName , List<Object> obj);
 
 }

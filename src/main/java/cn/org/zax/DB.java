@@ -9,6 +9,7 @@ import cn.org.zax.repository.DBRepository;
 import cn.org.zax.support.DBSupport;
 import com.zaxxer.hikari.HikariDataSource;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.collections.ListUtils;
 
 import java.sql.*;
 import java.util.List;
@@ -81,8 +82,24 @@ public class DB<T,ID> implements DBRepository {
     }
 
     @Override
-    public Object select(String sql, String dbName, BindMapper bindMapper, Object... obj) throws SQLException {
+    public Object select(String sql, String dbName, BindMapper bindMapper, Object... obj) {
+        try {
+            DBSupport support = new DBSupport(sql,dbName);
+            support.addParams(obj);
+            PreparedStatement statement  = connection.prepareStatement(support.sql);
+            support.buildSqlParams(statement);
+            support.bindMapper(bindMapper);
+            ResultSet resultSet = statement.executeQuery();
+            return support.buildResultSetBean(resultSet);
+        }catch (Exception e){
+            log.error("select one fail to message {}",e);
+        }
         return null;
+    }
+
+    @Override
+    public Object select(String sql, String dbName, BindMapper bindMapper, List obj) {
+        return select(sql,dbName,bindMapper,obj.toArray());
     }
 
 
@@ -90,6 +107,7 @@ public class DB<T,ID> implements DBRepository {
     public int insert(String sql ,String dbName ,Class clazz , Object... obj) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
+            support.addParams(obj);
             PreparedStatement statement = connection.prepareStatement(support.sql,PreparedStatement.RETURN_GENERATED_KEYS);
             support.buildSqlParams(statement);
             int result =  statement.executeUpdate();
@@ -105,7 +123,12 @@ public class DB<T,ID> implements DBRepository {
     }
 
     @Override
-    public int update(String sql ,String dbName ) {
+    public int insert(String sql, String dbName, Class clazz, List obj) {
+        return insert(sql,dbName,clazz,obj.toArray());
+    }
+
+    @Override
+    public int update(String sql ,String dbName) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
             PreparedStatement statement = connection.prepareStatement(support.sql);
@@ -119,7 +142,21 @@ public class DB<T,ID> implements DBRepository {
 
     @Override
     public int update(String sql, String dbName, Object... obj) {
+        try {
+            DBSupport support = new DBSupport(sql, dbName);
+            support.addParams(obj);
+            PreparedStatement statement = connection.prepareStatement(support.sql);
+            support.buildSqlParams(statement);
+            return statement.executeUpdate();
+        } catch (SQLException e) {
+            log.error("update record fail to message {}",e);
+        }
         return 0;
+    }
+
+    @Override
+    public int update(String sql, String dbName, List obj) {
+        return update(sql,dbName,obj.toArray());
     }
 
 }
