@@ -11,6 +11,7 @@ import org.junit.Test;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -62,7 +63,7 @@ public class AppTest{
         System.out.println("查全部"+all);
 
         String sql3 = "select * from :Users where id =?";
-        User one = (User) db.select(sql3,dbName,userMapper,4);
+        User one = (User) db.select(sql3,dbName,userMapper, Arrays.asList(4));
         System.out.println("查一个"+one);
 
 

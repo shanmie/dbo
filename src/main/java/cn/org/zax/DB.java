@@ -97,10 +97,10 @@ public class DB<T,ID> implements DBRepository {
         return null;
     }
 
-    @Override
+    /*@Override
     public T select(String sql, String dbName, BindMapper bindMapper, List obj) {
         return select(sql,dbName,bindMapper,obj.toArray());
-    }
+    }*/
 
 
     @Override
@@ -120,11 +120,6 @@ public class DB<T,ID> implements DBRepository {
             log.error("insert record fail to message {}",e);
         }
         return 0;
-    }
-
-    @Override
-    public int insert(String sql, String dbName, Class clazz, List obj) {
-        return insert(sql,dbName,clazz,obj.toArray());
     }
 
     @Override
@@ -152,11 +147,6 @@ public class DB<T,ID> implements DBRepository {
             log.error("update record fail to message {}",e);
         }
         return 0;
-    }
-
-    @Override
-    public int update(String sql, String dbName, List obj) {
-        return update(sql,dbName,obj.toArray());
     }
 
 }
