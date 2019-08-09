@@ -20,17 +20,17 @@ public class WhereHelp {
      * @return
      */
     private String orLike(String sql, List<Long> collect,String fieldName,String joinMark){
-        String where ="(";
+        StringBuilder where = new StringBuilder("(");
         if (joinMark !=null){
-            where = joinMark + where;
+            where.insert(0, joinMark);
         }
         for (int i = 0; i < collect.size(); i++) {
-            where += " "+fieldName+" like '%"+collect.get(i)+"%'";
+            where.append(" ").append(fieldName).append(" like '%").append(collect.get(i)).append("%'");
             if (i!= collect.size()-1){
-                where = where +" or";
+                where.append(" or");
             }
         }
-        where = where + ")";
+        where.append(")");
         sql += where;
         return sql;
     }

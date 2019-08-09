@@ -43,7 +43,7 @@ public class AppTest{
 
     @Test
     public void test() throws SQLException {
-       /* String sql = "insert into %Users(username,name,age,balance,password,uuid) values (?,?,?,?,?,?)";
+        /*String sql = "insert into :Users(username,name,age,balance,password,uuid) values (?,?,?,?,?,?)";
 
         List list = new ArrayList();
         list.add("呀嘿嘿嘿");
@@ -53,22 +53,29 @@ public class AppTest{
         list.add("12144231");
         list.add("derf34dd");
 
-        int insert2 = db.insert(new DBSupport(sql,dbName).addParams(list),Integer.class);
+        int insert2 = db.insert(sql,dbName,Integer.class,list);
 
-        int insert = db.insert(new DBSupport(sql,dbName).addParams("呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d"),Integer.class);*/
-        //System.out.println("插入 | "+insert +" and "+insert2);
+        //int insert = db.insert(sql,dbName,Integer.class, "呀嘿嘿嘿", "hello", 10, 20, "12144231", "disd890923d");
 
-        String sql2 = "select * from :Users";
-        List<User> all = db.selectAll(sql2,dbName,userMapper);
-        System.out.println("查全部"+all);
-
-        String sql3 = "select * from :Users where id =?";
-        User one =  db.select(sql3,dbName,userMapper, Arrays.asList(4));
-        System.out.println("查一个"+one);
+        System.out.println("插入 | "+insert2);*/
 
 
-        /*String sql4 = "update %Users set password=? where id =?";
-        int update = db.update(new DBSupport(sql4, dbName).addParams("11111",6));
+        String sql2 = "select count(*) from :Users";
+        Integer select = db.select(sql2, dbName);
+        System.out.println("查总"+select);
+
+        /*for (int i = 0; i < 10000; i++) {
+            String sql3 = "select * from :Users where id =?";
+            User one =  db.select(sql3,dbName,userMapper, Arrays.asList(4));
+            System.out.println("查一个"+one+"-----i--------"+i);
+        }*/
+
+
+
+
+
+        /*String sql4 = "update :Users set password=? where id =?";
+        int update = db.update(sql4,dbName,"111",6);
         System.out.println("更新"+update);*/
 
 

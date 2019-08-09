@@ -25,9 +25,9 @@ import java.util.List;
 @Slf4j
 public class DB<T, ID> implements DBRepository {
 
-    Connection connection;
+    private Connection connection;
 
-    public DB(Config config) {
+    private DB(Config config) {
         //创建数据源
         HikariDataSource dataSource = DataSourceManager.createDataSource(config);
         //获取连接
@@ -37,7 +37,7 @@ public class DB<T, ID> implements DBRepository {
 
     }
 
-    static public DBRepository create(Config config) {
+    static DBRepository create(Config config) {
         return register(config);
     }
 
@@ -67,14 +67,13 @@ public class DB<T, ID> implements DBRepository {
     }
 
     @Override
-    public T select(String sql, String dbName, BindMapper bindMapper) {
+    public Integer select(String sql, String dbName) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
             PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
-            support.bindMapper(bindMapper);
             ResultSet resultSet = statement.executeQuery();
-            return support.buildResultSetBean(resultSet);
+            return  support.buildResultSetInteger(resultSet);
         } catch (SQLException e) {
             log.error("select one fail to message {}", e);
         }
@@ -112,19 +111,6 @@ public class DB<T, ID> implements DBRepository {
             }
         } catch (SQLException e) {
             log.error("insert record fail to message {}", e);
-        }
-        return 0;
-    }
-
-    @Override
-    public int update(String sql, String dbName) {
-        try {
-            DBSupport support = new DBSupport(sql, dbName);
-            PreparedStatement statement = connection.prepareStatement(support.sql);
-            support.buildSqlParams(statement);
-            return statement.executeUpdate();
-        } catch (SQLException e) {
-            log.error("update record fail to message {}", e);
         }
         return 0;
     }

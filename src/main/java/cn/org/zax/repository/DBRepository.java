@@ -17,13 +17,11 @@ import java.util.List;
 public interface DBRepository {
     <T> List<T> selectAll(String sql, String dbName, BindMapper bindMapper);
 
-    <T> T select(String sql, String dbName, BindMapper bindMapper);
+    Integer select(String sql, String dbName);
 
     <T> T select(String sql, String dbName, BindMapper bindMapper, Object... obj);
 
     int insert(String sql, String dbName, Class clazz, Object... obj);
-
-    int update(String sql, String dbName);
 
     int update(String sql, String dbName, Object... obj);
 

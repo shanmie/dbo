@@ -43,4 +43,9 @@ public class ResultSetSupport{
         return DBSupport.parseMapper(rs);
     }
 
+    public Integer buildResultSetInteger(ResultSet rs) throws SQLException {
+        rs.next();
+        return rs.getInt(1);
+    }
+
 }
