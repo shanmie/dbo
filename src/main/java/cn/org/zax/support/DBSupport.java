@@ -5,10 +5,7 @@ import cn.org.zax.mapper.BindMapper;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 
 /**
@@ -27,11 +24,6 @@ public class DBSupport extends ResultSetSupport{
         super(sql, dbName);
     }
 
-    public DBSupport addParams(List<Object> paramsList){
-        this.paramsList = paramsList;
-        return this;
-    }
-
     public DBSupport addParams(Object... args){
         this.paramsList = new ArrayList<>();
         if (args.length > 0){
@@ -39,15 +31,13 @@ public class DBSupport extends ResultSetSupport{
                 paramsList.addAll((Collection<?>) args[0]);
                 return this;
             }
-            for (Object arg : args) {
-                paramsList.add(arg);
-            }
+            paramsList.addAll(Arrays.asList(args));
         }
        return this;
     }
 
     public DBSupport bindMapper(BindMapper mapper){
-        this.mapper = mapper;
+        DBSupport.mapper = mapper;
         return this;
     }
 

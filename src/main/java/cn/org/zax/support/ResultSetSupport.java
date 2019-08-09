@@ -19,12 +19,12 @@ public class ResultSetSupport{
     public String dbName;
 
 
-    public ResultSetSupport(String sql, String dbName) {
+    ResultSetSupport(String sql, String dbName) {
         this.sql = buildDBNameSql(sql,dbName);
         this.dbName = dbName;
     }
 
-    static public String buildDBNameSql(String sql,String dbName){
+    private static String buildDBNameSql(String sql, String dbName){
         String beforeLast = StringUtils.substringBeforeLast(sql,":");
         String afterLast = StringUtils.substringAfterLast(sql,":");
         return beforeLast + dbName + "." + afterLast;
