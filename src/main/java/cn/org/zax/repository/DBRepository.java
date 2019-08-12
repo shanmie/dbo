@@ -1,10 +1,10 @@
 package cn.org.zax.repository;
 
-import cn.org.zax.mapper.BindMapper;
-import cn.org.zax.support.DBSupport;
+import cn.org.zax.mapper.BindBeanMapper;
+import cn.org.zax.mapper.BindMapMapper;
 
-import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Package: cn.org.zax.datasource.config
@@ -15,11 +15,13 @@ import java.util.List;
  * @Version: 1.0
  */
 public interface DBRepository {
-    <T> List<T> selectAll(String sql, String dbName, BindMapper bindMapper);
+    <T> List<T> selectAll(String sql, String dbName, BindBeanMapper bindBeanMapper);
 
-    Integer select(String sql, String dbName);
+    Integer selectInteger(String sql, String dbName);
 
-    <T> T select(String sql, String dbName, BindMapper bindMapper, Object... obj);
+    <K, V> Map<K, V> selectMap(String sql, String dbName, BindMapMapper bindMapMapper);
+
+    <T> T select(String sql, String dbName, BindBeanMapper bindMapper, Object... obj);
 
     int insert(String sql, String dbName, Class clazz, Object... obj);
 

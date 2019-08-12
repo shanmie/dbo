@@ -11,6 +11,6 @@ import java.sql.SQLException;
  * @CreateDate: 2018/12/6 下午1:48
  * @Version: 1.0
  */
-public interface BindMapper<T> {
+public interface BindBeanMapper<T> {
     T mapper(ResultSet rs) throws SQLException;
 }

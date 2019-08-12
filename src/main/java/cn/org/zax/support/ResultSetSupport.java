@@ -1,4 +1,5 @@
 package cn.org.zax.support;
+
 import org.apache.commons.lang3.StringUtils;
 
 import java.sql.ResultSet;
@@ -14,33 +15,37 @@ import java.util.List;
  * @CreateDate: 2018/12/7 下午5:49
  * @Version: 1.0
  */
-public class ResultSetSupport{
+public class ResultSetSupport {
     public String sql;
     public String dbName;
 
 
     ResultSetSupport(String sql, String dbName) {
-        this.sql = buildDBNameSql(sql,dbName);
+        this.sql = buildDBNameSql(sql, dbName);
         this.dbName = dbName;
     }
 
-    private static String buildDBNameSql(String sql, String dbName){
-        String beforeLast = StringUtils.substringBeforeLast(sql,":");
-        String afterLast = StringUtils.substringAfterLast(sql,":");
+    private static String buildDBNameSql(String sql, String dbName) {
+        String beforeLast = StringUtils.substringBeforeLast(sql, ":");
+        String afterLast = StringUtils.substringAfterLast(sql, ":");
         return beforeLast + dbName + "." + afterLast;
     }
 
     public <T> List<T> buildResultSetList(ResultSet rs) throws SQLException {
         List<T> resultSetList = new ArrayList<>();
-        while (rs.next()){
-            resultSetList.add(DBSupport.parseMapper(rs));
+        while (rs.next()) {
+            resultSetList.add(DBSupport.parseBeanMapper(rs));
         }
         return resultSetList;
     }
 
     public <T> T buildResultSetBean(ResultSet rs) throws SQLException {
         rs.next();
-        return DBSupport.parseMapper(rs);
+        return DBSupport.parseBeanMapper(rs);
+    }
+
+    public <T> T buildResultSetMap(ResultSet rs) throws SQLException {
+        return DBSupport.parseMapMapper(rs);
     }
 
     public Integer buildResultSetInteger(ResultSet rs) throws SQLException {

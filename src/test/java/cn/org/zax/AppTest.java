@@ -3,16 +3,15 @@ package cn.org.zax;
 
 import cn.org.zax.config.Config;
 
-import cn.org.zax.mapper.BindMapper;
+import cn.org.zax.mapper.BindBeanMapper;
+import cn.org.zax.mapper.BindMapMapper;
 import cn.org.zax.repository.DBRepository;
 import cn.org.zax.support.DBSupport;
 import org.junit.Test;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 
 /**
@@ -20,7 +19,7 @@ import java.util.List;
  */
 public class AppTest{
 
-    class UserMapper implements BindMapper {
+    class UserMapper implements BindBeanMapper {
         @Override
         public User mapper(ResultSet rs) throws SQLException {
             User u = new User();
@@ -60,8 +59,8 @@ public class AppTest{
         System.out.println("插入 | "+insert2);*/
 
 
-        String sql2 = "select count(*) from :Users";
-        Integer select = db.select(sql2, dbName);
+        String sql2 = "select * from :Users where id=4";
+        Integer select = db.selectInteger(sql2, dbName);
         System.out.println("查总"+select);
 
         /*for (int i = 0; i < 10000; i++) {
@@ -69,6 +68,15 @@ public class AppTest{
             User one =  db.select(sql3,dbName,userMapper, Arrays.asList(4));
             System.out.println("查一个"+one+"-----i--------"+i);
         }*/
+
+        Map<String, String> map1 = db.selectMap(sql2, dbName, (map, rs) -> {
+            map.put("userName", rs.getString("username"));
+            map.put("name", rs.getString("name"));
+        });
+        System.out.println(map1);
+
+
+
 
 
 

@@ -3,16 +3,17 @@ package cn.org.zax;
 import cn.org.zax.config.Config;
 import cn.org.zax.manager.ConnectionManager;
 import cn.org.zax.manager.DataSourceManager;
-import cn.org.zax.mapper.BindMapper;
+import cn.org.zax.mapper.BindBeanMapper;
+import cn.org.zax.mapper.BindMapMapper;
 import cn.org.zax.pool.DataSourcePool;
 import cn.org.zax.repository.DBRepository;
 import cn.org.zax.support.DBSupport;
 import com.zaxxer.hikari.HikariDataSource;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.collections.ListUtils;
 
 import java.sql.*;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Package: cn.org.zax.datasource.config
@@ -52,12 +53,12 @@ public class DB<T, ID> implements DBRepository {
 
 
     @Override
-    public List<T> selectAll(String sql, String dbName, BindMapper bindMapper) {
+    public List<T> selectAll(String sql, String dbName, BindBeanMapper bindMapper) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
             PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
-            support.bindMapper(bindMapper);
+            support.bindBeanMapper(bindMapper);
             ResultSet resultSet = statement.executeQuery();
             return support.buildResultSetList(resultSet);
         } catch (SQLException e) {
@@ -67,27 +68,43 @@ public class DB<T, ID> implements DBRepository {
     }
 
     @Override
-    public Integer select(String sql, String dbName) {
+    public Integer selectInteger(String sql, String dbName) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
             PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
             ResultSet resultSet = statement.executeQuery();
-            return  support.buildResultSetInteger(resultSet);
+            return support.buildResultSetInteger(resultSet);
         } catch (SQLException e) {
-            log.error("select one fail to message {}", e);
+            log.error("select count fail to message {}", e);
         }
         return null;
     }
 
     @Override
-    public T select(String sql, String dbName, BindMapper bindMapper, Object... obj) {
+    public <K, V> Map<K, V> selectMap(String sql, String dbName, BindMapMapper bindMapMapper) {
+        try {
+            DBSupport support = new DBSupport(sql, dbName);
+
+            PreparedStatement statement = connection.prepareStatement(support.sql);
+            support.buildSqlParams(statement);
+            support.bindMapMapper(bindMapMapper);
+            ResultSet resultSet = statement.executeQuery();
+            return support.buildResultSetMap(resultSet);
+        } catch (Exception e) {
+            log.error("select map fail to message {}", e);
+        }
+        return null;
+    }
+
+    @Override
+    public T select(String sql, String dbName, BindBeanMapper bindMapper, Object... obj) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
             support.addParams(obj);
             PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
-            support.bindMapper(bindMapper);
+            support.bindBeanMapper(bindMapper);
             ResultSet resultSet = statement.executeQuery();
             return support.buildResultSetBean(resultSet);
         } catch (Exception e) {
