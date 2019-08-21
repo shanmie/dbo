@@ -1,6 +1,7 @@
 package cn.org.zax.support;
 
 import cn.org.zax.mapper.BindBeanMapper;
+import cn.org.zax.mapper.BindMapListMapper;
 import cn.org.zax.mapper.BindMapMapper;
 
 import java.sql.PreparedStatement;
@@ -20,6 +21,7 @@ import java.util.*;
 public class DBSupport extends ResultSetSupport {
     private static BindBeanMapper beanMapper;
     private static BindMapMapper mapMapper;
+    private static BindMapListMapper mapListMapper;
     private List<Object> paramsList = new ArrayList<>();
 
     public DBSupport(String sql, String dbName) {
@@ -48,12 +50,21 @@ public class DBSupport extends ResultSetSupport {
         return this;
     }
 
+    public DBSupport bindMapListMapper(BindMapListMapper mapListMapper) {
+        DBSupport.mapListMapper = mapListMapper;
+        return this;
+    }
+
     public static <T> T parseBeanMapper(ResultSet rs) throws SQLException {
         return (T) beanMapper.mapper(rs);
     }
 
-    public static <T> T parseMapMapper(ResultSet rs) throws SQLException {
-        return (T) mapMapper.parse(rs);
+    public static <K, V> Map<K, V> parseMapMapper(ResultSet rs) throws SQLException {
+        return mapMapper.parse(rs);
+    }
+
+    public static <K, V> List<Map<K, V>> parseMapListMapper(ResultSet rs) throws SQLException {
+        return mapListMapper.parse(rs);
     }
 
     public <T> T returnPrimaryKey(ResultSet rs, Class clazz) throws SQLException {

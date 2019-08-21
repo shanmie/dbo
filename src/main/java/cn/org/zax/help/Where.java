@@ -10,7 +10,7 @@ import java.util.List;
  * @CreateDate: 2018/12/18 下午4:44
  * @Version: 1.0
  */
-public class WhereHelp {
+public class Where {
     /**
      * like or
      * @param sql

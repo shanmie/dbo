@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Package: cn.org.zax.support
@@ -44,8 +45,12 @@ public class ResultSetSupport {
         return DBSupport.parseBeanMapper(rs);
     }
 
-    public <T> T buildResultSetMap(ResultSet rs) throws SQLException {
+    public <K, V> Map<K, V> buildResultSetMap(ResultSet rs) throws SQLException {
         return DBSupport.parseMapMapper(rs);
+    }
+
+    public <K, V> List<Map<K, V>> buildResultSetMapList(ResultSet rs) throws SQLException {
+        return DBSupport.parseMapListMapper(rs);
     }
 
     public Integer buildResultSetInteger(ResultSet rs) throws SQLException {

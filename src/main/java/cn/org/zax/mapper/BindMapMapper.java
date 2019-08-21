@@ -9,7 +9,7 @@ import java.util.Map;
  * @author deacon
  * @since 2019/8/12
  */
-public interface BindMapMapper<K,V> {
+public interface BindMapMapper<K, V> {
     default Map<K, V> parse(ResultSet rs) throws SQLException {
         LinkedHashMap<K, V> map = new LinkedHashMap<>();
         while (rs.next()) {
@@ -18,5 +18,6 @@ public interface BindMapMapper<K,V> {
         return map;
     }
 
-    void putMap(LinkedHashMap<K,V> map,ResultSet rs) throws SQLException;
+
+    void putMap(LinkedHashMap<K, V> map, ResultSet rs) throws SQLException;
 }

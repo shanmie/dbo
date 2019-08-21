@@ -3,10 +3,9 @@ package cn.org.zax;
 
 import cn.org.zax.config.Config;
 
+import cn.org.zax.help.Sql;
 import cn.org.zax.mapper.BindBeanMapper;
-import cn.org.zax.mapper.BindMapMapper;
 import cn.org.zax.repository.DBRepository;
-import cn.org.zax.support.DBSupport;
 import org.junit.Test;
 
 import java.sql.ResultSet;
@@ -63,18 +62,24 @@ public class AppTest{
         Integer select = db.selectInteger(sql2, dbName);
         System.out.println("查总"+select);
 
+        String sql3 = "select * from :Users where id in(:id)";
+
+
         /*for (int i = 0; i < 10000; i++) {
             String sql3 = "select * from :Users where id =?";
             User one =  db.select(sql3,dbName,userMapper, Arrays.asList(4));
             System.out.println("查一个"+one+"-----i--------"+i);
         }*/
 
-        Map<String, String> map1 = db.selectMap(sql2, dbName, (map, rs) -> {
+        List<Map<Object, Object>> maps = db.selectMapList(Sql.In(sql3,"id",4), dbName, (list2, rs) -> {
+            Map<String,Object> map =new HashMap<>();
             map.put("userName", rs.getString("username"));
+            map.put("id", rs.getString("id"));
             map.put("name", rs.getString("name"));
-        });
-        System.out.println(map1);
+            list2.add(map);
+        }, Arrays.asList(4, 6, 7, 8));
 
+        System.out.println(maps);
 
 
 

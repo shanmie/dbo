@@ -4,6 +4,7 @@ import cn.org.zax.config.Config;
 import cn.org.zax.manager.ConnectionManager;
 import cn.org.zax.manager.DataSourceManager;
 import cn.org.zax.mapper.BindBeanMapper;
+import cn.org.zax.mapper.BindMapListMapper;
 import cn.org.zax.mapper.BindMapMapper;
 import cn.org.zax.pool.DataSourcePool;
 import cn.org.zax.repository.DBRepository;
@@ -53,9 +54,10 @@ public class DB<T, ID> implements DBRepository {
 
 
     @Override
-    public List<T> selectAll(String sql, String dbName, BindBeanMapper bindMapper) {
+    public List<T> selectAll(String sql, String dbName, BindBeanMapper bindMapper, Object... obj) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
+            support.addParams(obj);
             PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
             support.bindBeanMapper(bindMapper);
@@ -68,9 +70,10 @@ public class DB<T, ID> implements DBRepository {
     }
 
     @Override
-    public Integer selectInteger(String sql, String dbName) {
+    public Integer selectInteger(String sql, String dbName, Object... obj) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
+            support.addParams(obj);
             PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
             ResultSet resultSet = statement.executeQuery();
@@ -82,10 +85,10 @@ public class DB<T, ID> implements DBRepository {
     }
 
     @Override
-    public <K, V> Map<K, V> selectMap(String sql, String dbName, BindMapMapper bindMapMapper) {
+    public <K, V> Map<K, V> selectMap(String sql, String dbName, BindMapMapper bindMapMapper, Object... obj) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
-
+            support.addParams(obj);
             PreparedStatement statement = connection.prepareStatement(support.sql);
             support.buildSqlParams(statement);
             support.bindMapMapper(bindMapMapper);
@@ -95,6 +98,24 @@ public class DB<T, ID> implements DBRepository {
             log.error("select map fail to message {}", e);
         }
         return null;
+    }
+
+    @Override
+    public <K, V> List<Map<K, V>> selectMapList(String sql, String dbName, BindMapListMapper bindMapListMapper, Object... obj) {
+        try {
+            DBSupport support = new DBSupport(sql, dbName);
+            support.addParams(obj);
+            PreparedStatement statement = connection.prepareStatement(support.sql);
+            support.buildSqlParams(statement);
+            support.bindMapListMapper(bindMapListMapper);
+            ResultSet resultSet = statement.executeQuery();
+            return support.buildResultSetMapList(resultSet);
+        } catch (Exception e) {
+            log.error("select map list fail to message {}", e);
+        }
+        return null;
+
+
     }
 
     @Override
