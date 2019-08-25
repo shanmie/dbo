@@ -1,6 +1,5 @@
 package cn.org.zax.support;
 
-import org.apache.commons.lang3.StringUtils;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -27,9 +26,10 @@ public class ResultSetSupport {
     }
 
     private static String buildDBNameSql(String sql, String dbName) {
-        String beforeLast = StringUtils.substringBeforeLast(sql, ":");
-        String afterLast = StringUtils.substringAfterLast(sql, ":");
-        return beforeLast + dbName + "." + afterLast;
+        int index = sql.indexOf(":");
+        String before = sql.substring(0,index);
+        String after = sql.substring(index+1,sql.length());
+        return before + dbName + "." + after;
     }
 
     public <T> List<T> buildResultSetList(ResultSet rs) throws SQLException {
