@@ -39,7 +39,7 @@ public class DB<T, ID> implements DBRepository {
 
     }
 
-    static DBRepository create(Config config) {
+    public static DBRepository create(Config config) {
         return register(config);
     }
 
