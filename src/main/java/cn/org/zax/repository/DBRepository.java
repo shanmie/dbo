@@ -22,7 +22,7 @@ public interface DBRepository {
 
     <K, V> Map<K, V> selectMap(String sql, String dbName, BindMapMapper bindMapMapper,Object... obj);
 
-    <K, V> List<Map<K, V>> selectMapList(String sql, String dbName, BindMapListMapper bindMapMapper, Object... obj);
+    <K, V> List<Map<K, V>> selectAllMap(String sql, String dbName, BindMapListMapper bindMapMapper, Object... obj);
 
     <T> T select(String sql, String dbName, BindBeanMapper bindMapper, Object... obj);
 

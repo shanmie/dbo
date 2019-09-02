@@ -101,7 +101,7 @@ public class DB<T, ID> implements DBRepository {
     }
 
     @Override
-    public <K, V> List<Map<K, V>> selectMapList(String sql, String dbName, BindMapListMapper bindMapListMapper, Object... obj) {
+    public <K, V> List<Map<K, V>> selectAllMap(String sql, String dbName, BindMapListMapper bindMapListMapper, Object... obj) {
         try {
             DBSupport support = new DBSupport(sql, dbName);
             support.addParams(obj);
